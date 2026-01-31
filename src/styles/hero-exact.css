@@ -170,14 +170,14 @@
 
 /* ─────────────────────────────────────────────────────────────────────────────
    BENTO GRID - EXACT reference layout
-   Left: 1 tall column | Right: 2 stacked elements matching height
+   Left: 2 stacked items (SEO + cube) | Right: 1 tall person photo with overlapping years
    ───────────────────────────────────────────────────────────────────────────── */
 .hero-bento {
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 200px 220px;
   grid-template-rows: 1fr 1fr;
   gap: 16px;
-  height: 380px;
+  height: 400px;
   position: relative;
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.2s forwards;
@@ -233,10 +233,10 @@
   50% { transform: translateY(-12px) rotate(3deg); }
 }
 
-/* Person Photo Card - Top right */
+/* Person Photo Card - Right side, spans BOTH rows */
 .bento-person {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 1 / 3;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
@@ -285,10 +285,12 @@
   font-weight: 600;
 }
 
-/* 16+ Years Card - Bottom right grid cell */
+/* 16+ Years Card - Overlapping bottom-right of person photo */
 .bento-years {
-  grid-column: 2;
-  grid-row: 2;
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  width: 160px;
   background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
   border-radius: 16px;
   padding: 20px;
@@ -297,6 +299,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 10;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .bento-years-number {
@@ -315,28 +319,32 @@
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   TRUST BADGES - LARGE, ABOVE THE FOLD, immediately below hero
+   TRUST BADGES - LARGE, SPAN FULL WIDTH, immediately below hero
    ───────────────────────────────────────────────────────────────────────────── */
 .hero-badges {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 48px;
-  padding: 40px 0;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 50px 0 30px;
   flex-wrap: wrap;
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.4s forwards;
+  width: 100%;
 }
 
 .hero-badges img {
-  height: 40px;
+  height: 50px;
   width: auto;
+  max-width: 160px;
+  object-fit: contain;
   opacity: 1;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  flex: 1;
 }
 
 .hero-badges img:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -368,12 +376,18 @@
   }
 
   .hero-bento {
-    grid-template-columns: 180px 180px;
-    height: 340px;
+    grid-template-columns: 180px 200px;
+    height: 360px;
   }
 
   .bento-years {
-    width: 160px;
+    width: 140px;
+    right: -20px;
+  }
+
+  .hero-badges img {
+    height: 45px;
+    max-width: 140px;
   }
 }
 
@@ -406,11 +420,13 @@
   }
 
   .hero-badges {
-    gap: 32px;
+    justify-content: space-around;
+    gap: 20px;
   }
 
   .hero-badges img {
-    height: 32px;
+    height: 40px;
+    max-width: 120px;
   }
 }
 
@@ -456,12 +472,14 @@
   }
 
   .hero-badges {
-    gap: 20px;
+    justify-content: space-around;
+    gap: 16px;
     padding: 30px 0;
   }
 
   .hero-badges img {
-    height: 28px;
+    height: 35px;
+    max-width: 100px;
   }
 
   .hero-cta {
