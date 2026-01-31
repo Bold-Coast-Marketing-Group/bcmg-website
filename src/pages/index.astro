@@ -1,5 +1,6 @@
 ---
 import '../styles/design-system.css';
+import '../styles/hero-exact.css';
 
 const services = [
   {
@@ -112,73 +113,74 @@ const benefits = [
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Section - EXACT match to searchenginebuffer.com -->
   <section class="hero">
     <div class="hero-background">
       <img src="/images/data-baackground-points.jpg" alt="" aria-hidden="true" class="hero-bg-image">
       <div class="hero-bg-overlay"></div>
     </div>
     <div class="container">
+      <!-- Main Hero Grid: Content left, Bento right -->
       <div class="hero-grid">
-        <div class="hero-content animate-fade-in-up">
+        <div class="hero-content">
           <h1 class="hero-title">Results-Driven SEO, Web Design & Digital Marketing Nationwide</h1>
           <p class="hero-subtitle">Bold Coast Marketing Group helps businesses grow with flexible, month-to-month digital marketing that delivers measurable results. We turn your website into a lead-generating machine.</p>
 
           <div class="hero-cta">
-            <a href="/contact" class="btn btn-primary btn-lg">Get started now</a>
-            <a href="/contact" class="btn btn-outline btn-lg">Free Consultation</a>
+            <a href="/contact" class="btn btn-primary">
+              Get started now
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+            </a>
+            <a href="/contact" class="btn btn-outline">Free Consultation</a>
           </div>
 
           <div class="hero-trust">
             <span class="hero-trust-text">Trusted by over 200 Businesses</span>
             <span class="hero-rating">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
               5.0
             </span>
           </div>
         </div>
 
-        <div class="hero-bento animate-fade-in-up delay-200">
-          <!-- SEO Card - Top left -->
-          <div class="bento-card bento-seo-white">
+        <!-- Bento Grid: Left column (SEO + Cube), Right column (Person spanning full height) -->
+        <div class="hero-bento">
+          <!-- SEO Card - Top left, white background -->
+          <div class="bento-seo">
             <h3 class="bento-seo-title">SEO</h3>
             <p class="bento-seo-text">Generated over $8m<br>for our clients in 2025</p>
           </div>
 
+          <!-- 3D Cube - Bottom left -->
+          <div class="bento-cube">
+            <img src="/images/gold-line-chart-with-3d-graph-business-data-e1767530514641.png" alt="3D SEO visualization">
+          </div>
+
           <!-- Person Photo - Right side, spans both rows -->
-          <div class="bento-card bento-person-photo">
+          <div class="bento-person">
             <img src="/images/home-grid-image-2.webp" alt="Happy client" class="bento-person-img">
             <div class="bento-person-overlay"></div>
-            <div class="bento-person-text">
-              <p class="bento-person-quote">"I've been with Bold Coast Marketing Group for over 7 Years and plan on many more."</p>
-              <p class="bento-person-author">– James B.</p>
+            <div class="bento-person-content">
+              <p class="bento-quote">"I've been with Bold Coast Marketing Group for over 7 Years and plan on many more."</p>
+              <p class="bento-author">– James B.</p>
             </div>
           </div>
 
-          <!-- 3D Cube - Bottom left -->
-          <div class="bento-cube-container">
-            <img src="/images/gold-line-chart-with-3d-graph-business-data-e1767530514641.png" alt="3D SEO visualization" class="bento-cube-img">
-          </div>
-
-          <!-- 16+ Years - Bottom right -->
-          <div class="bento-card bento-years-orange">
+          <!-- 16+ Years - Overlapping bottom right -->
+          <div class="bento-years">
             <div class="bento-years-number">16+</div>
             <p class="bento-years-text">Years of Marketing<br>experience</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Trust Badges -->
-  <section class="trust-badges">
-    <div class="container">
-      <div class="trust-badges-inner">
-        <img src="/images/yelp-loho.png" alt="Yelp" class="trust-badge-logo">
-        <img src="/images/google-places-logo.png" alt="Google" class="trust-badge-logo">
-        <img src="/images/ahref.png" alt="Ahrefs" class="trust-badge-logo">
-        <img src="/images/brightlocal.png" alt="BrightLocal" class="trust-badge-logo">
-        <img src="/images/moz.png" alt="Moz" class="trust-badge-logo">
+      <!-- Trust Badges - LARGE, immediately below hero content, ABOVE THE FOLD -->
+      <div class="hero-badges">
+        <img src="/images/yelp-loho.png" alt="Yelp">
+        <img src="/images/google-places-logo.png" alt="Google">
+        <img src="/images/ahref.png" alt="Ahrefs">
+        <img src="/images/brightlocal.png" alt="BrightLocal">
+        <img src="/images/moz.png" alt="Moz">
       </div>
     </div>
   </section>
