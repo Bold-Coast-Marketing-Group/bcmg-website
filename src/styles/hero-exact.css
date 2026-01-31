@@ -233,10 +233,10 @@
   50% { transform: translateY(-12px) rotate(3deg); }
 }
 
-/* Person Photo Card - Right side, spans both rows */
+/* Person Photo Card - Top right */
 .bento-person {
   grid-column: 2;
-  grid-row: 1 / 3;
+  grid-row: 1;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
@@ -285,18 +285,18 @@
   font-weight: 600;
 }
 
-/* 16+ Years Card - Overlapping bottom right of person card */
+/* 16+ Years Card - Bottom right grid cell */
 .bento-years {
-  position: absolute;
-  bottom: 16px;
-  right: 0;
-  width: 180px;
+  grid-column: 2;
+  grid-row: 2;
   background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
   border-radius: 16px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  z-index: 10;
-  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .bento-years-number {
