@@ -10,37 +10,37 @@ const stats = [
 
 const services = [
   {
-    icon: '📈',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>`,
     title: 'SEO Services',
     description: 'Dominate search rankings with data-driven SEO strategies that drive organic traffic and qualified leads to your business.',
     link: '/services/seo'
   },
   {
-    icon: '📍',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
     title: 'Local SEO',
     description: 'Get found by customers in your area with optimized Google Business profiles, local citations, and geo-targeted content.',
     link: '/services/local-seo'
   },
   {
-    icon: '🎨',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>`,
     title: 'Web Design',
     description: 'Beautiful, conversion-focused websites built for speed, mobile responsiveness, and exceptional user experiences.',
     link: '/services/web-design'
   },
   {
-    icon: '🎯',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>`,
     title: 'PPC Advertising',
     description: 'Maximize ROI with strategically managed Google Ads and social media campaigns that target your ideal customers.',
     link: '/services/ppc'
   },
   {
-    icon: '🛒',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
     title: 'E-Commerce SEO',
     description: 'Boost online store visibility with product optimization, schema markup, and conversion rate optimization.',
     link: '/services/ecommerce-seo'
   },
   {
-    icon: '🖥️',
+    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
     title: 'Small Business Hosting',
     description: 'Fast, secure, and reliable hosting solutions with 99.9% uptime guarantee and dedicated support.',
     link: '/services/hosting'
@@ -105,6 +105,21 @@ const features = [
 
   <!-- Hero Section -->
   <section class="hero">
+    <!-- Floating particles -->
+    <div class="hero-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <!-- Grid pattern -->
+    <div class="hero-grid-pattern"></div>
+
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-badge animate-fade-in">
@@ -137,7 +152,7 @@ const features = [
         <div class="hero-trust animate-fade-in-up delay-300">
           <div class="hero-trust-avatars">
             <img class="hero-trust-avatar" src="/images/hero-team.jpg" alt="Client" style="object-position: 0 0;">
-            <img class="hero-trust-avatar" src="/images/professional-laptop.jpg" alt="Client" style="object-position: center;">
+            <img class="hero-trust-avatar" src="/images/professional-dark.jpg" alt="Client" style="object-position: center top;">
             <img class="hero-trust-avatar" src="/images/web-design.jpg" alt="Client" style="object-position: center;">
           </div>
           <div>
@@ -157,7 +172,7 @@ const features = [
         </div>
 
         <div class="bento-item bento-image bento-image-portrait">
-          <img src="/images/professional-laptop.jpg" alt="Digital marketing professional analyzing data" loading="lazy">
+          <img src="/images/data-analytics.jpg" alt="Digital marketing analytics dashboard" loading="lazy">
         </div>
 
         <div class="bento-item bento-stat">
@@ -171,18 +186,18 @@ const features = [
         </div>
 
         <div class="bento-item bento-image" style="grid-column: span 2;">
-          <img src="/images/analytics-dashboard.jpg" alt="Analytics dashboard showing growth metrics" loading="lazy">
+          <img src="/images/abstract-3d.jpg" alt="Modern digital technology visualization" loading="lazy">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Stats Section -->
-  <section class="stats">
+  <section class="stats reveal">
     <div class="container">
-      <div class="stats-grid">
+      <div class="stats-grid stagger-children">
         {stats.map((stat) => (
-          <div class="stat-item">
+          <div class="stat-item reveal">
             <div class="stat-value">{stat.value}</div>
             <div class="stat-label">{stat.label}</div>
           </div>
@@ -194,17 +209,15 @@ const features = [
   <!-- Services Section -->
   <section class="services" id="services">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal">
         <h2>Digital Marketing Services That <span class="text-gradient">Deliver</span></h2>
         <p>Comprehensive solutions designed to grow your business online, backed by data and proven strategies.</p>
       </div>
 
-      <div class="services-grid">
+      <div class="services-grid stagger-children">
         {services.map((service) => (
-          <div class="card service-card">
-            <div class="service-icon">
-              <span style="font-size: 1.5rem;">{service.icon}</span>
-            </div>
+          <div class="card card-glow service-card reveal">
+            <div class="service-icon" set:html={service.icon}></div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
             <a href={service.link} class="service-link">
@@ -223,11 +236,11 @@ const features = [
   <!-- Features Section -->
   <section class="features">
     <div class="container features-grid">
-      <div class="features-image animate-float">
-        <img src="/images/maine-coast.jpg" alt="Maine's bold coast - where we're headquartered" loading="lazy">
+      <div class="features-image reveal-left animate-float">
+        <img src="/images/lighthouse.jpg" alt="Lighthouse representing guidance and direction" loading="lazy">
       </div>
 
-      <div class="features-content">
+      <div class="features-content reveal-right">
         <h2>Why Choose <span class="text-gradient">Bold Coast</span>?</h2>
         <p class="lead">We're not just another marketing agency. Based on Maine's rugged Bold Coast, we bring the same resilience and authenticity to your digital strategy.</p>
 
@@ -260,7 +273,7 @@ const features = [
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
-      <div class="cta-box">
+      <div class="cta-box reveal-scale">
         <h2>Ready to Grow Your Business?</h2>
         <p>Get a free consultation and discover how we can help you dominate your market online.</p>
         <div class="flex gap-4 justify-center" style="flex-wrap: wrap;">
@@ -375,9 +388,9 @@ const features = [
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
+        nav?.classList.add('scrolled');
       } else {
-        nav.classList.remove('scrolled');
+        nav?.classList.remove('scrolled');
       }
     });
 
@@ -388,6 +401,74 @@ const features = [
     navToggle?.addEventListener('click', () => {
       navLinks?.classList.toggle('active');
     });
+
+    // Scroll-triggered animations using Intersection Observer
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all reveal elements
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Counter animation for stats
+    const animateCounter = (element: Element, target: string) => {
+      const numericTarget = parseInt(target.replace(/[^0-9]/g, ''));
+      const suffix = target.replace(/[0-9]/g, '');
+      const duration = 2000;
+      const start = 0;
+      const startTime = performance.now();
+
+      const updateCounter = (currentTime: number) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        // Easing function
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+        const current = Math.floor(easeOutQuart * numericTarget);
+
+        element.textContent = current + suffix;
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          element.textContent = target;
+        }
+      };
+
+      requestAnimationFrame(updateCounter);
+    };
+
+    // Trigger counter animation when stats section is visible
+    const statsSection = document.querySelector('.stats');
+    let countersAnimated = false;
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersAnimated) {
+          countersAnimated = true;
+          document.querySelectorAll('.stat-value').forEach(el => {
+            const target = el.textContent || '0';
+            animateCounter(el, target);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
   </script>
 </body>
 </html>
