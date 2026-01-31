@@ -423,12 +423,13 @@ p {
 }
 
 .bento-card-featured {
-  background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 100%);
-  border: none;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+  border: 1px solid var(--border-color);
+  position: relative;
 }
 
 .bento-card-featured:hover {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+  border-color: var(--accent);
 }
 
 .bento-label {
@@ -463,12 +464,12 @@ p {
 
 .bento-3d-image {
   position: absolute;
-  bottom: -20px;
-  right: -20px;
-  width: 140px;
+  bottom: -30px;
+  right: -40px;
+  width: 180px;
   height: auto;
-  filter: drop-shadow(0 10px 30px rgba(249, 115, 22, 0.3));
-  z-index: 2;
+  filter: drop-shadow(0 15px 40px rgba(249, 115, 22, 0.4));
+  z-index: 10;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -520,11 +521,12 @@ p {
 
 .bento-testimonial-image {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   flex-shrink: 0;
+  box-shadow: 0 10px 40px rgba(249, 115, 22, 0.2);
 }
 
 .bento-testimonial-image img {
@@ -536,7 +538,7 @@ p {
 .bento-testimonial-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.3) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.4) 0%, transparent 70%);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -559,13 +561,12 @@ p {
 .trust-badge-logo {
   height: 32px;
   width: auto;
-  opacity: 0.7;
-  filter: brightness(0) invert(1);
-  transition: opacity var(--transition-base);
+  opacity: 1;
+  transition: opacity var(--transition-base), transform var(--transition-base);
 }
 
 .trust-badge-logo:hover {
-  opacity: 1;
+  transform: scale(1.05);
 }
 
 /* Legacy text badges */
