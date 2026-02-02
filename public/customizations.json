@@ -1,11 +1,28 @@
 {
   "version": "1.0",
-  "lastUpdated": "2026-02-02T00:00:00.000Z",
+  "lastUpdated": "2026-02-02T17:40:38.185Z",
   "generatedBy": "SiteAgent Editor",
-  "pages": {},
+  "pages": {
+    "/": {
+      "edits": [
+        {
+          "elementId": "hero-section",
+          "selector": {
+            "className": "hero-section hero",
+            "tagName": "SECTION"
+          },
+          "type": "spacing",
+          "property": "minHeight",
+          "original": "",
+          "replacement": "1000px",
+          "editedAt": "2026-02-02T17:40:35.033Z"
+        }
+      ]
+    }
+  },
   "images": [],
   "metadata": {
     "editorVersion": "1.0.0",
-    "totalEdits": 0
+    "totalEdits": 1
   }
 }
