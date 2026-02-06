@@ -2,83 +2,6 @@
 import '../styles/design-system.css';
 import '../styles/hero-exact.css';
 import '../styles/customizations.css';
-
-const services = [
-  {
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
-    title: 'Local SEO',
-    description: 'Dominate local search results. We optimize your Google Business Profile and local citations to attract customers in your area.',
-    link: '/services/local-seo',
-    cta: 'Get Started Now'
-  },
-  {
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
-    title: 'Digital Strategy',
-    description: 'Custom marketing plans tailored to your business goals and budget.',
-    link: '/services/strategy',
-    cta: 'More Information'
-  },
-  {
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
-    title: 'Small Business Hosting',
-    description: 'Fast, secure website hosting built for small businesses. We keep your site running smoothly so you can focus on your customers.',
-    link: '/services/hosting',
-    cta: 'More Information'
-  },
-  {
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>`,
-    title: 'Content Marketing',
-    description: 'Quality blog posts, articles, and website copy that engage your audience and improve your search rankings.',
-    link: '/services/content',
-    cta: 'More Information'
-  },
-  {
-    icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"/><circle cx="12" cy="14" r="2"/><path d="M5 10h2"/><path d="M17 10h2"/><path d="M6.5 6l1.5 1"/><path d="M16 7l1.5-1"/></svg>`,
-    title: 'AI Automation',
-    description: 'Cut overhead and reclaim hours every week. We set up smart automations for appointment booking, customer follow-ups, review requests, and invoicing — so your team handles more business without adding headcount.',
-    link: '/services/ai-automation',
-    cta: 'Learn More'
-  }
-];
-
-const benefits = [
-  {
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`,
-    title: 'Month-to-Month Flexibility',
-    description: 'No annual contracts or commitments. Cancel anytime with no penalties or fees.',
-    link: 'More Information'
-  },
-  {
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
-    title: 'Secure Infrastructure',
-    description: 'Your website is hosted on reliable servers with SSL security and regular backups.',
-    link: 'More Information'
-  },
-  {
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
-    title: 'Local Business Focus',
-    description: 'We understand what local businesses need to compete. Our strategies are built around your market.',
-    link: 'Get Started Now'
-  },
-  {
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
-    title: 'Transparent Pricing',
-    description: 'Know exactly what you\'re paying for with clear pricing and detailed reports.',
-    link: 'Get Started Now'
-  },
-  {
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>`,
-    title: 'Ready for Scale',
-    description: 'Our strategies grow with your business. As you expand, we adjust your SEO and marketing to match.',
-    link: 'Get Started Now'
-  },
-  {
-    icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
-    title: 'Ongoing Support',
-    description: 'Get help when you need it. Our team is available to answer questions and make updates.',
-    link: 'Get Started Now'
-  }
-];
 ---
 
 <!DOCTYPE html>
@@ -151,20 +74,15 @@ const benefits = [
           </div>
         </div>
 
-        <!-- Bento Grid: 1x2 layout - Left stacked (SEO + cube), Right tall (person + overlapping years) -->
+        <!-- Bento Grid -->
         <div class="hero-bento">
-          <!-- SEO Card - Top left, white background -->
           <div class="bento-seo">
             <h3 class="bento-seo-title">SEO</h3>
             <p class="bento-seo-text">Generated over $8m<br>for our clients in 2025</p>
           </div>
-
-          <!-- 3D Cube - Bottom left -->
           <div class="bento-cube">
             <img src="/images/gold-line-chart-with-3d-graph-business-data-e1767530514641.png" alt="3D SEO visualization" class="bento-cube-image">
           </div>
-
-          <!-- Person Photo - Right side, spans full height -->
           <div class="bento-person">
             <img src="/images/home-grid-image-2.webp" alt="Happy client" class="bento-person-image">
             <div class="bento-person-overlay"></div>
@@ -172,7 +90,6 @@ const benefits = [
               <p class="bento-quote">"I've been with Bold Coast for over 7 Years!"</p>
               <p class="bento-author">– James B.</p>
             </div>
-            <!-- 16+ Years - Overlapping bottom right -->
             <div class="bento-years">
               <div class="bento-years-number">16+</div>
               <p class="bento-years-text">Years of Marketing<br>experience</p>
@@ -181,7 +98,7 @@ const benefits = [
         </div>
       </div>
 
-      <!-- Trust Badges - LARGE, immediately below hero content, ABOVE THE FOLD -->
+      <!-- Trust Badges -->
       <div class="hero-badges">
         <img src="/images/yelp-loho.png" alt="Yelp" class="badge-yelp">
         <img src="/images/google-places-logo.png" alt="Google" class="badge-google">
@@ -192,13 +109,11 @@ const benefits = [
     </div>
   </section>
 
-  <!-- Stats Section -->
-  <section class="stats-section stats" data-aos="fade-up">
+  <!-- Stats Section — horizontal: title left, 3 stats right -->
+  <section class="stats-section" data-aos="fade-up">
     <div class="container">
-      <div class="stats-header">
+      <div class="stats-row">
         <h2 class="stats-title">Proven Results for Businesses Nationwide</h2>
-      </div>
-      <div class="stats-grid" data-aos-stagger>
         <div class="stat-card-1 stat-item">
           <div class="stat-1-value stat-value">500+</div>
           <div class="stat-1-label stat-label">Happy Clients</div>
@@ -215,90 +130,116 @@ const benefits = [
     </div>
   </section>
 
-  <!-- Feature Section 1 -->
+  <!-- Feature Section — combined: left (title + 3 horizontal cards), right (tall image card) -->
   <section class="feature-section-1 feature-section" data-aos="fade-up">
     <div class="container">
-      <div class="feature-grid">
-        <div class="feature-1-image-wrapper feature-image" data-aos="fade-right">
-          <img src="/images/analytics-charts.jpg" alt="Data analytics and growth charts" loading="lazy" class="feature-1-image">
-        </div>
-        <div class="feature-1-content feature-content" data-aos="fade-left">
+      <div class="feature-combined-grid">
+        <!-- Left: Title, description, 3 horizontal cards -->
+        <div class="feature-1-content feature-content">
           <h2 class="feature-1-title">Flexible Digital Marketing That Delivers Results</h2>
           <p class="feature-1-description">No long-term contracts. No hidden fees. Just transparent, results-focused digital marketing that helps your business grow. We specialize in local SEO, web design, and PPC advertising for service businesses across the United States.</p>
 
-          <div class="feature-1-list feature-list">
-            <div class="feature-item-1 feature-item border-glow hover-lift">
+          <div class="feature-cards-row">
+            <div class="feature-item-1 feature-item">
               <div class="feature-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               </div>
-              <div class="feature-item-content">
-                <h3 class="feature-item-1-title">SEO Services</h3>
-                <p class="feature-item-1-description">Boost your rankings and drive organic traffic with data-driven SEO strategies.</p>
-              </div>
+              <h3 class="feature-item-1-title">SEO Services</h3>
+              <p class="feature-item-1-description">Boost your rankings and drive organic traffic with data-driven SEO strategies.</p>
             </div>
-            <div class="feature-item-2 feature-item border-glow hover-lift">
+            <div class="feature-item-2 feature-item">
               <div class="feature-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
               </div>
-              <div class="feature-item-content">
-                <h3 class="feature-item-2-title">Web Design</h3>
-                <p class="feature-item-2-description">Modern, responsive websites that convert visitors into customers.</p>
-              </div>
+              <h3 class="feature-item-2-title">Web Design</h3>
+              <p class="feature-item-2-description">Modern, responsive websites that convert visitors into customers.</p>
             </div>
-            <div class="feature-item-3 feature-item border-glow hover-lift">
+            <div class="feature-item-3 feature-item">
               <div class="feature-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
               </div>
-              <div class="feature-item-content">
-                <h3 class="feature-item-3-title">PPC Advertising</h3>
-                <p class="feature-item-3-description">Google Ads and paid campaigns that bring leads fast and maximize ROI.</p>
-              </div>
+              <h3 class="feature-item-3-title">PPC Advertising</h3>
+              <p class="feature-item-3-description">Google Ads and paid campaigns that bring leads fast and maximize ROI.</p>
             </div>
+          </div>
+        </div>
+
+        <!-- Right: Tall card with image + "Your Online Presence" -->
+        <div class="feature-2-card feature-section-2">
+          <div class="feature-2-image-wrapper">
+            <img src="/images/analytics-dashboard.jpg" alt="Data analytics dashboard" loading="lazy" class="feature-2-image">
+          </div>
+          <div class="feature-2-content">
+            <h3 class="feature-2-title">Your Online Presence, Our Priority</h3>
+            <p class="feature-2-description">We build websites and SEO strategies that help your business get found online and convert visitors into customers.</p>
+            <a href="/services" class="feature-2-cta btn btn-primary">
+              Get Started
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Feature Section 2 -->
-  <section class="feature-section-2 feature-section" data-aos="fade-up">
-    <div class="container">
-      <div class="feature-grid reverse">
-        <div class="feature-2-image-wrapper feature-image border-glow" data-aos="fade-left">
-          <img src="/images/laptop-design.jpg" alt="Website design on laptop" loading="lazy" class="feature-2-image">
-        </div>
-        <div class="feature-2-content feature-content" data-aos="fade-right">
-          <h2 class="feature-2-title">Your Online Presence, Our Priority</h2>
-          <p class="feature-2-description">We build websites and SEO strategies that help your business get found online and convert visitors into customers.</p>
-          <a href="/services" class="feature-2-cta btn btn-primary btn-lg pulse-animation">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
+  <!-- Services Section — asymmetric bento grid -->
   <section class="services-section" data-aos="fade-up">
     <div class="container">
-      <div class="services-header section-header">
+      <div class="services-header-row">
         <h2 class="services-title">Our Digital Marketing Services</h2>
         <p class="services-description">From comprehensive SEO strategies to stunning web design, we offer the full range of digital marketing services your business needs to succeed online. Our team specializes in helping local businesses, service companies, and professionals across the country.</p>
       </div>
 
-      <div class="services-grid" data-aos-stagger>
-        {services.map((service, index) => (
-          <div class={`service-card-${index + 1} service-card hover-lift`}>
-            <div class="service-icon" set:html={service.icon}></div>
-            <h3 class={`service-${index + 1}-title`}>{service.title}</h3>
-            <p class={`service-${index + 1}-description`}>{service.description}</p>
-            <a href={service.link} class={`service-${index + 1}-cta service-link`}>
-              {service.cta}
+      <!-- Row 1: Large card left + smaller card right -->
+      <div class="services-bento-top">
+        <div class="service-card-1 service-card service-card-large">
+          <div class="service-card-text">
+            <h3 class="service-1-title">Local SEO</h3>
+            <p class="service-1-description">Dominate local search results. We optimize your Google Business Profile and local citations to attract customers in your area.</p>
+            <a href="/services/local-seo" class="service-1-cta service-link">
+              Get Started Now
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
             </a>
           </div>
-        ))}
+          <div class="service-card-image-wrapper">
+            <img src="/images/pointing-to-title-scaled.png" alt="Local SEO expert" loading="lazy" class="service-1-image">
+          </div>
+        </div>
+        <div class="service-card-2 service-card">
+          <div class="service-2-image-wrapper">
+            <img src="/images/data_around_globe_transparent.png" alt="Digital strategy network" loading="lazy" class="service-2-image">
+          </div>
+          <div class="service-icon-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.58 3.25 3.93"/><circle cx="12" cy="14" r="2"/></svg>
+          </div>
+          <h3 class="service-2-title">Digital Strategy</h3>
+          <p class="service-2-description">Custom marketing plans tailored to your business goals and budget.</p>
+          <a href="/services/strategy" class="service-2-cta service-link">
+            More Information
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+          </a>
+        </div>
+      </div>
 
-        <!-- Client Satisfaction Card -->
-        <div class="service-card-6 service-card service-card-satisfaction hover-lift">
+      <!-- Row 2: 3 equal cards -->
+      <div class="services-bento-bottom">
+        <div class="service-card-3 service-card">
+          <h3 class="service-3-title">Small Business Hosting</h3>
+          <p class="service-3-description">Fast, secure website hosting built for small businesses. We keep your site running smoothly so you can focus on your customers.</p>
+          <a href="/services/hosting" class="service-3-cta service-link">
+            More Information
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+          </a>
+        </div>
+        <div class="service-card-4 service-card">
+          <h3 class="service-4-title">Content Marketing</h3>
+          <p class="service-4-description">Quality blog posts, articles, and website copy that engage your audience and improve your search rankings.</p>
+          <a href="/services/content" class="service-4-cta service-link">
+            More Information
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+          </a>
+        </div>
+        <div class="service-card-5 service-card service-card-satisfaction">
           <h3 class="satisfaction-title">Client Satisfaction</h3>
           <div class="satisfaction-value">100%</div>
           <p class="satisfaction-description">Our clients trust us to deliver results that grow their business.</p>
@@ -307,28 +248,72 @@ const benefits = [
     </div>
   </section>
 
-  <!-- Benefits Section -->
+  <!-- Benefits Section — images left, content right, then 4 icon cards below -->
   <section class="benefits-section" data-aos="fade-up">
     <div class="container">
-      <div class="benefits-header section-header">
-        <h2 class="benefits-title">Why Work With Bold Coast Marketing Group?</h2>
-        <p class="benefits-description">We offer flexible, month-to-month services with no long-term contracts. Our goal is simple: help your business grow online through better visibility and a website that works for you.</p>
+      <!-- Top: Images left + Title/cards right -->
+      <div class="benefits-top">
+        <div class="benefits-images">
+          <img src="/images/professional-laptop.jpg" alt="Professional working" loading="lazy" class="benefits-image-1">
+          <img src="/images/professional-dark.jpg" alt="Team collaboration" loading="lazy" class="benefits-image-2">
+        </div>
+        <div class="benefits-content">
+          <h2 class="benefits-title">Why Work With Bold Coast Marketing Group?</h2>
+          <p class="benefits-description">We offer flexible, month-to-month services with no long-term contracts. Our goal is simple: help your business grow online through better visibility and a website that works for you.</p>
+          <div class="benefits-mini-grid">
+            <div class="benefit-card-1 benefit-card-mini">
+              <h3 class="benefit-1-title">Month-to-Month Flexibility</h3>
+              <p class="benefit-1-description">No annual contracts or commitments. Cancel anytime with no penalties or fees.</p>
+              <a href="/contact" class="benefit-1-cta benefit-link">More Information <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+            </div>
+            <div class="benefit-card-2 benefit-card-mini">
+              <h3 class="benefit-2-title">Secure Infrastructure</h3>
+              <p class="benefit-2-description">Your website is hosted on reliable servers with SSL security and regular backups.</p>
+              <a href="/contact" class="benefit-2-cta benefit-link">More Information <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="benefits-grid" data-aos-stagger>
-        {benefits.map((benefit, index) => (
-          <div class={`benefit-card-${index + 1} benefit-card hover-lift`}>
-            <div class="benefit-icon" set:html={benefit.icon}></div>
-            <h3 class={`benefit-${index + 1}-title`}>{benefit.title}</h3>
-            <p class={`benefit-${index + 1}-description`}>{benefit.description}</p>
-            <a href="/contact" class={`benefit-${index + 1}-cta benefit-link`}>{benefit.link}</a>
+      <!-- Bottom: 4 icon cards in a row -->
+      <div class="benefits-bottom-grid">
+        <div class="benefit-card-3 benefit-card">
+          <div class="benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-        ))}
+          <h3 class="benefit-3-title">Local Business Focus</h3>
+          <p class="benefit-3-description">We understand what local businesses need to compete. Our strategies are built around your market and customers.</p>
+          <a href="/contact" class="benefit-3-cta benefit-link">Get Started Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+        </div>
+        <div class="benefit-card-4 benefit-card">
+          <div class="benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="benefit-4-title">Transparent Pricing</h3>
+          <p class="benefit-4-description">Know exactly what you're paying for with clear pricing and detailed reports. No surprise charges or hidden fees.</p>
+          <a href="/contact" class="benefit-4-cta benefit-link">Get Started Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+        </div>
+        <div class="benefit-card-5 benefit-card">
+          <div class="benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="benefit-5-title">Ready for Scale</h3>
+          <p class="benefit-5-description">Our strategies grow with your business. As you expand, we adjust your SEO and marketing to match.</p>
+          <a href="/contact" class="benefit-5-cta benefit-link">Get Started Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+        </div>
+        <div class="benefit-card-6 benefit-card">
+          <div class="benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="benefit-6-title">Ongoing Support</h3>
+          <p class="benefit-6-description">Get help when you need it. Our team is available to answer questions and make updates to your website and campaigns.</p>
+          <a href="/contact" class="benefit-6-cta benefit-link">Get Started Now <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
+  <!-- CTA Section — dark warm bg with person image -->
   <section class="cta-section" data-aos="zoom-in">
     <div class="container">
       <div class="cta-box">
@@ -349,26 +334,43 @@ const benefits = [
               Transparent reporting so you know what's working
             </li>
           </ul>
-          <a href="/contact" class="cta-button">Get Started Now</a>
+          <a href="/contact" class="cta-button btn btn-primary">
+            Get Started Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+          </a>
         </div>
-        <div class="cta-image-wrapper cta-image">
-          <img src="/images/team-meeting.jpg" alt="Our team ready to help your business grow" loading="lazy" class="cta-image-img">
+        <div class="cta-image-wrapper">
+          <img src="/images/contact-us-guy-1.png" alt="Ready to help your business grow" loading="lazy" class="cta-image-img">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer — 3 col top, links bottom -->
   <footer class="site-footer footer">
     <div class="container">
       <div class="footer-top">
+        <div class="footer-logo-area">
+          <a href="/" class="footer-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="6" fill="#f97316"/>
+              <path d="M8 12l8-6 8 6v12a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z" fill="none" stroke="white" stroke-width="2"/>
+              <path d="M13 26V18h6v8" fill="none" stroke="white" stroke-width="2"/>
+            </svg>
+            <span>Bold Coast<br>Marketing Group</span>
+          </a>
+        </div>
         <div class="footer-newsletter">
-          <h3 class="footer-newsletter-title">Subscribe to receive news, guides and product updates.</h3>
+          <p class="footer-newsletter-text">Subscribe to receive news, guides and product updates.</p>
+        </div>
+        <div class="footer-newsletter-form">
           <form class="newsletter-form">
-            <input type="email" class="newsletter-input" placeholder="Email address" required>
+            <input type="email" class="newsletter-input" placeholder="Email address *" required>
             <button type="submit" class="newsletter-submit btn btn-primary">Subscribe Now</button>
           </form>
         </div>
+      </div>
+      <div class="footer-bottom">
         <nav class="footer-nav">
           <ul class="footer-links">
             <li><a href="/">Home</a></li>
@@ -378,18 +380,17 @@ const benefits = [
             <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="footer-bottom">
         <div class="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms & Conditions</a>
         </div>
-        <div class="footer-address footer-info">
+        <div class="footer-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <span>29 W Side Rd, Addison Maine</span>
         </div>
-        <div class="footer-copyright footer-info">
-          <span>Copyright &copy; 2026 | <a href="https://boldcoastmarketinggroup.com/">Bold Coast Marketing Group</a></span>
-        </div>
+      </div>
+      <div class="footer-copyright">
+        <span>Copyright &copy; 2026 | <a href="https://boldcoastmarketinggroup.com/">Bold Coast Marketing Group</a></span>
       </div>
     </div>
   </footer>
@@ -413,31 +414,24 @@ const benefits = [
     });
 
     // AOS-style scroll animations
-    const aosElements = document.querySelectorAll('[data-aos], [data-aos-stagger]');
-
+    const aosElements = document.querySelectorAll('[data-aos]');
     const aosObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('aos-animate');
         }
       });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
     aosElements.forEach(el => aosObserver.observe(el));
 
     // Counter animation for stat values
     const statValues = document.querySelectorAll('.stat-value, .satisfaction-value');
-
     const counterObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const el = entry.target;
           const text = el.textContent || '';
           const match = text.match(/(\d+)/);
-
           if (match) {
             const target = parseInt(match[1]);
             const suffix = text.replace(/\d+/, '');
@@ -445,7 +439,6 @@ const benefits = [
             const increment = target / 30;
             const duration = 1500;
             const stepTime = duration / 30;
-
             const timer = setInterval(() => {
               current += increment;
               if (current >= target) {
@@ -456,12 +449,10 @@ const benefits = [
               }
             }, stepTime);
           }
-
           counterObserver.unobserve(el);
         }
       });
     }, { threshold: 0.5 });
-
     statValues.forEach(el => counterObserver.observe(el));
   </script>
 </body>
