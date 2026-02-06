@@ -709,18 +709,14 @@ p {
 
 .service-2-image-wrapper {
   width: 100%;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
   overflow: hidden;
 }
 
 .service-2-image-wrapper img {
-  max-height: 120px;
-  width: auto;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .service-card-2 .service-icon-badge {
