@@ -83,7 +83,7 @@
   --space-24: 6rem;
 
   /* Layout */
-  --container-max: 1290px;
+  --container-max: 1200px;
 
   /* Borders */
   --radius-sm: 6px;
@@ -439,7 +439,7 @@ p {
   background: linear-gradient(rgba(51, 28, 10, 0.7) 0%, rgb(12, 12, 12) 62%);
   border: none;
   border-radius: var(--radius-xl);
-  padding: 28px 22px;
+  padding: 24px 18px;
   transition: all var(--transition-base);
   box-shadow: rgba(230, 114, 32, 0.17) 0px -1px 0px 0px, rgba(255, 255, 255, 0.12) 0px 0px 0px 1px;
 }
