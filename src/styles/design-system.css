@@ -436,16 +436,17 @@ p {
 }
 
 .feature-item {
-  background: #141414;
-  border: 1px solid #3f3f46;
+  background: linear-gradient(rgba(51, 28, 10, 0.7) 0%, rgb(12, 12, 12) 62%);
+  border: none;
   border-radius: var(--radius-xl);
   padding: 28px 22px;
   transition: all var(--transition-base);
+  box-shadow: rgba(230, 114, 32, 0.17) 0px -1px 0px 0px, rgba(255, 255, 255, 0.12) 0px 0px 0px 1px;
 }
 
 .feature-item:hover {
-  border-color: var(--accent-border);
-  background: #1a1a1a;
+  box-shadow: rgba(230, 114, 32, 0.3) 0px -2px 0px 0px, rgba(255, 255, 255, 0.18) 0px 0px 0px 1px;
+  background: linear-gradient(rgba(51, 28, 10, 0.85) 0%, rgb(18, 18, 18) 62%);
 }
 
 .feature-icon {
@@ -481,12 +482,13 @@ p {
 
 /* Right column: tall card */
 .feature-2-card {
-  background: #141414;
-  border: 1px solid #3f3f46;
+  background: linear-gradient(180deg, rgba(51, 28, 10, 0.5) 0%, rgb(12, 12, 12) 50%);
+  border: none;
   border-radius: var(--radius-xl);
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: rgba(230, 114, 32, 0.17) 0px -1px 0px 0px, rgba(255, 255, 255, 0.12) 0px 0px 0px 1px;
 }
 
 .feature-2-image-wrapper {
@@ -602,17 +604,18 @@ p {
 
 /* All service cards */
 .service-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  background: linear-gradient(102deg, rgba(38, 27, 6, 0.36) 0%, rgba(0, 0, 0, 0.9) 100%);
+  border: none;
   border-radius: var(--radius-xl);
   padding: 32px;
   position: relative;
   overflow: hidden;
   transition: all var(--transition-base);
+  box-shadow: rgba(230, 114, 32, 0.17) 0px -1px 0px 0px, rgba(255, 255, 255, 0.12) 0px 0px 0px 1px;
 }
 
 .service-card:hover {
-  border-color: var(--accent-border);
+  box-shadow: rgba(230, 114, 32, 0.3) 0px -2px 0px 0px, rgba(255, 255, 255, 0.18) 0px 0px 0px 1px;
 }
 
 .service-card h3 {
@@ -689,6 +692,7 @@ p {
   display: flex;
   flex-direction: column;
   padding: 0;
+  background: linear-gradient(311deg, rgba(51, 28, 10, 0.51) 16%, rgb(0, 0, 0) 84%);
 }
 
 .service-2-image-wrapper {
