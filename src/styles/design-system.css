@@ -413,6 +413,11 @@ p {
 }
 
 /* Left column content */
+.feature-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .feature-content h2 {
   font-size: clamp(1.75rem, 3vw, 2rem);
   font-weight: var(--weight-extrabold);
@@ -428,11 +433,13 @@ p {
   margin-bottom: 32px;
 }
 
-/* Feature cards row: 3 across, horizontal */
+/* Feature cards row: 3 across, horizontal, stretches to fill remaining height */
 .feature-cards-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  flex: 1;
+  align-items: stretch;
 }
 
 .feature-item {
