@@ -91,9 +91,31 @@ import '../styles/customizations.css';
               <p class="bento-author">– James B.</p>
             </div>
           </div>
-          <div class="bento-seo">
-            <h3 class="bento-seo-title">SEO</h3>
-            <p class="bento-seo-text">Generated over $8m<br>for our clients in 2025</p>
+          <div class="bento-analytics">
+            <svg class="bento-chart" viewBox="0 0 160 80" fill="none" preserveAspectRatio="none">
+              <!-- Grid lines -->
+              <line x1="0" y1="20" x2="160" y2="20" stroke="rgba(249,115,22,0.1)" stroke-width="0.5"/>
+              <line x1="0" y1="40" x2="160" y2="40" stroke="rgba(249,115,22,0.1)" stroke-width="0.5"/>
+              <line x1="0" y1="60" x2="160" y2="60" stroke="rgba(249,115,22,0.1)" stroke-width="0.5"/>
+              <!-- Area fill -->
+              <path d="M0,72 C20,68 35,55 50,50 C65,45 75,48 90,35 C105,22 120,18 140,12 C150,9 155,6 160,4 L160,80 L0,80 Z" fill="url(#chartGradient)"/>
+              <!-- Line -->
+              <path d="M0,72 C20,68 35,55 50,50 C65,45 75,48 90,35 C105,22 120,18 140,12 C150,9 155,6 160,4" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <!-- Glow dot at end -->
+              <circle cx="160" cy="4" r="3.5" fill="#f97316"/>
+              <circle cx="160" cy="4" r="6" fill="rgba(249,115,22,0.3)"/>
+              <defs>
+                <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="rgba(249,115,22,0.25)"/>
+                  <stop offset="100%" stop-color="rgba(249,115,22,0)"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="bento-analytics-content">
+              <span class="bento-analytics-arrow">&#8593;</span>
+              <span class="bento-analytics-value">60%</span>
+              <p class="bento-analytics-label">Avg. Traffic Growth</p>
+            </div>
           </div>
           <div class="bento-years-card">
             <div class="bento-years-number">16+</div>
