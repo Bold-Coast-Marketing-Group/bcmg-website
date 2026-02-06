@@ -85,7 +85,7 @@
 .hero-subtitle {
   font-size: 1.0625rem;
   line-height: 1.75;
-  color: #a1a1aa;
+  color: #d4d6db;
   margin-bottom: 36px;
   max-width: 580px;
   opacity: 0;
@@ -323,7 +323,7 @@
 .bento-analytics-label {
   width: 100%;
   font-size: 0.75rem;
-  color: #a1a1aa;
+  color: #d4d6db;
   margin-top: 2px;
 }
 
