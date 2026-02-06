@@ -56,10 +56,10 @@
    ───────────────────────────────────────────────────────────────────────────── */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 440px;
-  gap: 80px;
+  grid-template-columns: 1fr 580px;
+  gap: 60px;
   align-items: start;
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 40px;
 }
 
@@ -209,8 +209,8 @@
    ───────────────────────────────────────────────────────────────────────────── */
 .hero-bento {
   display: grid;
-  grid-template-columns: 230px 190px;
-  grid-template-rows: 220px 160px;
+  grid-template-columns: 330px 235px;
+  grid-template-rows: 300px 270px;
   gap: 16px;
   position: relative;
   opacity: 0;
@@ -405,12 +405,12 @@
    ───────────────────────────────────────────────────────────────────────────── */
 @media (min-width: 1400px) {
   .hero-grid {
-    gap: 100px;
+    gap: 80px;
   }
 
   .hero-bento {
-    grid-template-columns: 250px 200px;
-    grid-template-rows: 240px 180px;
+    grid-template-columns: 350px 250px;
+    grid-template-rows: 320px 280px;
   }
 
   .hero-badges img {
@@ -423,13 +423,13 @@
    ───────────────────────────────────────────────────────────────────────────── */
 @media (max-width: 1200px) {
   .hero-grid {
-    grid-template-columns: 1fr 400px;
-    gap: 50px;
+    grid-template-columns: 1fr 480px;
+    gap: 40px;
   }
 
   .hero-bento {
-    grid-template-columns: 210px 170px;
-    grid-template-rows: 200px 140px;
+    grid-template-columns: 270px 195px;
+    grid-template-rows: 250px 220px;
   }
 
   .hero-badges img {
@@ -468,8 +468,8 @@
 
   .hero-bento {
     justify-self: center;
-    grid-template-columns: 220px 180px;
-    grid-template-rows: 190px 150px;
+    grid-template-columns: 250px 190px;
+    grid-template-rows: 230px 200px;
   }
 
   .hero-badges {
