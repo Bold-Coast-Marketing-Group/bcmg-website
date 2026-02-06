@@ -279,9 +279,14 @@ p {
 
 .nav-logo img,
 .nav-logo svg {
-  height: 32px;
+  height: 40px;
   width: auto;
   flex-shrink: 0;
+}
+
+.nav-logo-image {
+  height: 40px;
+  width: auto;
 }
 
 .nav-links {
@@ -1088,6 +1093,11 @@ p {
 
 .footer-logo svg {
   flex-shrink: 0;
+}
+
+.footer-logo-image {
+  height: 44px;
+  width: auto;
 }
 
 .footer-newsletter {
