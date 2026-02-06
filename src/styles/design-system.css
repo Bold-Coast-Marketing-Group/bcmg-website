@@ -692,7 +692,7 @@ p {
 }
 
 .service-card-image-wrapper img {
-  max-height: 340px;
+  max-height: 220px;
   width: auto;
   object-fit: contain;
   object-position: bottom center;
